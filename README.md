@@ -1,4 +1,4 @@
-# vadtordf: Creating an RDF (Linked Data) script from a VAD  diagram (visio, BPMS)
+# vadtordf: Creating an RDF (Linked Data) triple from a VAD diagram (visio, BPMS)
 
 Действия для получения модели процесса в формате RDF (turtle): 
 - в visio открыть файл visioOntoVAD.vsdm, 
