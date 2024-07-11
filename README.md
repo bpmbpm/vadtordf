@@ -1,10 +1,12 @@
-# vadtordf: Creating an RDF (Linked Data) triple from a VAD diagram (visio, BPMS)
+# vad to rdf: Creating an RDF (Linked Data) triple from a VAD diagram (visio, BPMS)
 
 Действия для получения модели процесса в формате RDF (turtle): 
 - в visio открыть файл visioOntoVAD.vsdm, 
 - открыть лист «vad» или “vadE” (English) со схемой процесса в нотации VAD (построенной по шаблонам из трафарета), 
 - запустить макрос – и в окне Immediate (VBA Immediate Window) будет выведено RDF – представление процесса VAD.
 На схеме процесса (листы «vad» и “vadE” или вновь созданные) вызывается макрос Main (Alt F8), который в окне MsgBox выдаст часть RDF (в Visio 2016 и ранних отрезается 255 символов), а полный в окно отладчика.
+
+При отсутсвии visio можно посмотреть pdf файл (visioOntoVAD_pdf.pdf)
 
 Далее открываем Visual Basic Editor (Alt F11, Ctrl G) и окно Immediate (Debug.Print). При копировании русскоязычного текста из окна Immediate нужно включать русскую раскладку клавиатуры. 
 Для визуализации в виде графа из окна Immediate копируем RDF триплеты (Ctrl A, Ctrl C) и вставляем их, например, в RDF online редактор, например, RDF grapher
