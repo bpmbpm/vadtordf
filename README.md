@@ -25,7 +25,7 @@ https://www.ldf.fi/service/rdf-grapher
 
 ss = Replace(ss, " ", "+") ' Замена пробелов на +
 
-ss = Replace(ss, "#", "%23") ' Замена # пробелов на %23
+ss = Replace(ss, "#", "%23") ' Замена # на %23
 
-ss = Replace(ss, """", "%22") ' Замена " пробелов на %22
+ss = Replace(ss, """", "%22") ' Замена "на %22
 
