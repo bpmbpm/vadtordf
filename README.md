@@ -16,3 +16,16 @@ https://www.ldf.fi/service/rdf-grapher
 [Graph (en)](https://www.ldf.fi/service/rdf-grapher?rdf=%40prefix+%3A+%3Chttp%3A%2F%2Fexample.org%2F%3E+.%0D%0A%40prefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+.%0D%0A%40prefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+.%0D%0A%3AMaking_a_paper_clip%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++rdfs%3Alabel+%22Making+a+paper+clip%22+%3B%0D%0A++++%3AhasDia+%3AVADscheme_Making_a_paper_clip+.%0D%0A%3AVADscheme_Making_a_paper_clip+rdf%3Atype+%3ADiagram+.%0D%0A%0D%0A%3ABuy_wire+%3AhasNext+%3ACut_the_wire+.%0D%0A%3ACut_the_wire+%3AhasNext+%3ABend_the_wire+.%0D%0A%3ABend_the_wire+%3AhasNext+%3APack_paper_clips+.%0D%0A%3APack_paper_clips+%3AhasNext+%3AProduct_storage+.%0D%0A%0D%0A%3ABuy_wire%0D%0A++++rdfs%3Alabel+%22Buy+wire%22+%3B%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++%3AisBegin+%3AVADscheme_Making_a_paper_clip+.%0D%0A%0D%0A%3ACut_the_wire%0D%0A++++rdfs%3Alabel+%22Cut+the+wire%22+%3B%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++%3AhasParent+%3AMaking_a_paper_clip+.%0D%0A%0D%0A%3APack_paper_clips%0D%0A++++rdfs%3Alabel+%22Pack+paper+clips%22+%3B%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++%3AhasParent+%3AMaking_a_paper_clip+.%0D%0A%0D%0A%3ABend_the_wire%0D%0A++++rdfs%3Alabel+%22Bend+the+wire%22+%3B%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++%3AisExt+%3AMaking_a_paper_clip+.%0D%0A%0D%0A%3AProduct_storage%0D%0A++++rdfs%3Alabel+%22Product+storage%22+%3B%0D%0A++++rdf%3Atype+%3AProcess+%3B%0D%0A++++%3AisEnd+%3AVADscheme_Making_a_paper_clip+.%0D%0A&from=ttl&to=png)
 
 Подробное описание см. [Semantic BPM. Онтологическое моделирование верхнеуровневых процессов. VAD](https://habr.com/ru/articles/828266/)
+
+### Файл visioOntoVAD2.vsdm
+
+В visioOntoVAD2.vsdm для визуализации графа без ручного переноса триплетов добавлен вызов https://www.ldf.fi/service/rdf-grapher?rdf=
+
+Могут быть сложности: изменить путь к браузеру "C:\Program Files\Google\Chrome\Application\chrome.exe" или добавить замены, дополнительно к 
+
+ss = Replace(ss, " ", "+") ' Замена пробелов на +
+
+ss = Replace(ss, "#", "%23") ' Замена # пробелов на %23
+
+ss = Replace(ss, """", "%22") ' Замена " пробелов на %22
+
